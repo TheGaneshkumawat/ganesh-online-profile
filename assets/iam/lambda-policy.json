@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "test12283829332329",
+        "Action": "logs:*",
+        "Effect": "Allow",
+        "Resource": "*"
+      },
+      {
+        "Sid": "test12283829390329",
+        "Action": [
+          "dynamodb:GetItem",
+          "dynamodb:UpdateItem"
+        ],
+        "Effect": "Allow",
+        "Resource": "*"
+      }
+    ]
+  }
