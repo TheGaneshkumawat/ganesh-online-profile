@@ -49,9 +49,6 @@ cd ganesh-online-profile
 
 ## How it will look (End Result)
 ![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/output.gif)
-![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/1.JPG)
-![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/2.JPG)
-![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/3.JPG)
 
 ## Further Enhancements
 
