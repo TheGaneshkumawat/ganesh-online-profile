@@ -2,5 +2,5 @@
 **/.terraform/*
 **/*.tfstate
 **/*.tfstate.*
-*.tfstate
-*.tfstate.backup
+/*.tfstate
+/*.tfstate.backup
