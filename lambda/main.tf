@@ -11,13 +11,14 @@ data "archive_file" "lambda_zip" {
 resource "aws_iam_role_policy" "lambda_policy" {
   name = "lambda_policy"
   role = aws_iam_role.lambda_role.id
-
-  policy = file("../assets/iam/lambda-policy.json")
+  policy = file(var.lambda_policy_path)
+  //policy = file("../assets/iam/lambda-policy.json")
 }
 
 resource "aws_iam_role" "lambda_role" {
   name               = "lambda_role"
-  assume_role_policy = file("../assets/iam/lambda-assume-policy.json")
+  assume_role_policy = file(var.lambda_assume_policy_path)
+  //assume_role_policy = file("../assets/iam/lambda-assume-policy.json")
 }
 
 resource "aws_lambda_function" "lambda_func" {
@@ -83,8 +84,8 @@ resource "aws_api_gateway_integration" "lambda_root" {
 
 resource "aws_api_gateway_deployment" "example" {
   depends_on = [
-    "aws_api_gateway_integration.lambda",
-    "aws_api_gateway_integration.lambda_root",
+    aws_api_gateway_integration.lambda,
+    aws_api_gateway_integration.lambda_root,
   ]
 
   rest_api_id = "${aws_api_gateway_rest_api.example.id}"
