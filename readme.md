@@ -1,7 +1,6 @@
 # Cloud Resume Challenge
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 ## Overview
 
 This is my online CV created using automation and cloud. This static website also maintains a visitor counter which increases every time the page refreshes. This website can be built or pulled down with a single click. Following are the components/technologies have been used to built this:
@@ -13,6 +12,7 @@ This is my online CV created using automation and cloud. This static website als
 
 ## Architecture
 #### Flow diagram
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/architecture.jpg)
 
 #### Description
 - An HTML file (static site) with some CSS is stored in AWS S3 (Https is achieved using AWS Cloudfront) 
@@ -22,6 +22,7 @@ This is my online CV created using automation and cloud. This static website als
 - All the AWS services mentioned above are provisioned using Terraform 
 
 #### Graph diagram
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/graph.jpg)
 
 ## Installation/Execution
 
@@ -47,16 +48,19 @@ cd ganesh-online-profile
 ```
 
 ## How it will look (End Result)
-
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/output.gif)
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/1.JPG)
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/2.JPG)
+![alt text](https://github.com/TheGaneshkumawat/ganesh-online-profile/blob/main/screens/3.JPG)
 
 ## Further Enhancements
 
 - Usage of Modules
-- Using more variable (for Bucket nam)
+- Using more variable (for Bucket name)
 - Achieving CI/CD Using Github Actions
 - Buying a domain name (and SSL certificate) and using AWS Route 53 to configure the same
 
 
 ## License
 
-MIT
+Free
